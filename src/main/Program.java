@@ -1,5 +1,4 @@
 package main;
-
 import animals.Bear;
 import animals.Elephant;
 import animals.Giraffe;
@@ -8,12 +7,10 @@ import animals.Turtle;
 import utilities.Food;
 import utilities.Point;
 import zoo.ZooUtility;
-
 public class Program
 {
 	public static void main(String[] args)
 	{
-		
 		System.out.println("********************************************");
 		System.out.println("Initilize");
 		System.out.println("********************************************");
@@ -22,7 +19,6 @@ public class Program
 		Elephant elephant1 = new Elephant("Dumbo", new Point(10, 10));
 		Giraffe giraffe1 = new Giraffe("Melman");
 		Turtle turtle = new Turtle("Raphael");
-
 		System.out.println("********************************************");
 		System.out.println("Eat action");
 		System.out.println("********************************************");
@@ -31,7 +27,6 @@ public class Program
 		ZooUtility.eat(elephant1, new Food("Grass", "herbivorous"));
 		ZooUtility.eat(giraffe1, new Food("Grass", "herbivorous"));
 		ZooUtility.eat(turtle, new Food("Grass", "herbivorous"));
-		
 		System.out.println("********************************************");
 		System.out.println("Move action");
 		System.out.println("********************************************");
@@ -40,7 +35,6 @@ public class Program
 		ZooUtility.move(elephant1,new Point(30, 300));
 		ZooUtility.move(giraffe1,new Point(40, 200));
 		ZooUtility.move(turtle,new Point(50, 100));
-		
 		System.out.println("********************************************");
 		System.out.println("ToString");
 		System.out.println("********************************************");
@@ -49,6 +43,5 @@ public class Program
 		System.out.println(elephant1);
 		System.out.println(giraffe1);
 		System.out.println(turtle);
-
 	}
 }
